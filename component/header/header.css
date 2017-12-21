@@ -1,0 +1,247 @@
+
+.header{
+    height: 50px;
+    width: 100%;
+    background: #00BAC7;
+    padding: 0px 10px;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+.header .nav-left{
+    float: left;
+}
+.nav-menu {
+   margin:8.5px -10px 8.5px -5px;
+   padding: 8px 10px;
+   border: none;
+   outline: none;
+   background: none;
+}
+.nav-menu span{
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+.header .nav-right{
+    float: right;
+}
+.nav-logo{
+   padding: 11px 10px 11px 12px;
+   height: 50px;
+   display: block;
+}
+.nav-logo img{
+    height: 100%;
+}
+.nav-admin{
+   margin:12px 0;
+   width: 25px;
+   height: 25px;
+   display: block;
+   border-width: 1px;
+   background: #fff;
+   border-radius: 50%;
+}
+.nav-admin img{
+    width: 100%;
+}
+.tap-icon{ 
+    background: url("../../public/imgs/main_icons.png") no-repeat;
+    background-size: 52px; 
+    display:inline-block;
+}
+.nav-search{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 13px;
+    right: 80px;
+    padding: 0;
+}
+.tap-search{
+    height:100%;
+    width: 100%;
+    background-position: -26px -222px;
+}
+.nav-download{
+    margin: 14px 0px 10px;
+}
+.tap-download{
+    background-position: 0px -54px;
+    margin: 0 0 0 5px;
+    width: 14px;
+    height: 26px;
+}
+.nav-mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.nav-slider{
+    position: fixed;
+    left: -73%;
+    top: 0;
+    background:#00BAC7;
+    z-index:2222;
+    width:73%;
+    height:100%;
+    display: block;
+    padding: 25px 24px 15px;
+}
+.slider_menu{
+    padding: 0;
+    margin: 0;
+}
+.mask{
+    background-color:black;
+    opacity:.6;
+    z-index:1111;
+    width:100%;
+    height:100%;
+}
+.back .back_1{
+    margin: 0 0 20px;
+    background:#00BAC7;
+    padding: 0;
+    border: 0;
+}
+.back .back_2{
+    width:16px;
+    height:16px;
+    background-position:0 -82px;
+}
+.slider_list a{
+    display: block;
+    color:#fff;
+    font-size:18px;
+    font-weight: 400;
+    font-family:Tahoma;
+    margin: 5px 0;
+    padding: 10px 20px;
+    width: 100%;
+    line-height: 20px;
+    text-align: left;
+}
+
+/*tapSearch的样式*/
+.btn{
+   display: inline-block;
+   padding: 6px 12px;
+   margin-bottom: 0;
+   text-align: center;
+   border:1px solid transparent;
+   border-radius:4px;
+   background: #00BAC7;
+}
+.back-logo{
+    background: url('')
+}
+
+.tapSearch{
+    display: none;
+    position:fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 6666;
+    border-radius: 3px;
+    box-shadow:0  2px 4px rgba(0,0,0,.4);
+    background: #fff;
+}
+.tapSearch .input{
+    flex:auto;
+}
+.search-top{
+    display: flex;
+    height: 50px;
+    background: #00BAC7;
+}
+.back-top{
+    padding: 8px 0px;
+}
+.back-top i{
+   content: '';
+   display: block;
+   background: url("../../public/imgs/main_icons.png") 0 -82px no-repeat;
+   background-size: 52px;
+   height: 16px;
+   width: 16px;
+}
+.input{
+   flex:auto;
+   position: relative;
+   padding: 8px;
+}
+.form-control{
+    width: 100%;
+    height: 34px;
+    background: #fff;
+    border-radius: 4px;
+}
+.search-word {
+    width: 100%;
+    height: 100%;
+    box-shadow:none;
+    border: none; 
+    outline: none;
+    padding:6px 12px 6px 25px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.serch-icon{
+    position: absolute;
+    left: 12px;
+    top:16px;
+    display: block;
+    background: url("../../public/imgs/main_icons.png") 0 -22px no-repeat;
+    height: 18px;
+    width: 22px;
+    background-size: 70px;
+}
+.clear{
+   position: absolute;
+   top: 16px;
+   right: 10px;
+}
+.clear i{
+   content: '';
+   display: block;
+   background: url("../../public/imgs/main_icons.png") -20px -55px no-repeat;
+   background-size: 52px;
+   height: 16px;
+   width: 16px;
+}
+.hot-word header{
+   height: 35px;
+   line-height: 35px;
+   padding-left:12px;
+   font-size: 12px;
+   color:#999;
+   background-color:#fafafa;
+}
+.list-unstyle{
+    padding: 0;
+    margin: 0;
+}
+.list-unstyle a{
+    border-bottom: 1px solid #eee;
+    padding-left: 0;
+    margin-left: 12px;
+    height: 41px;
+    line-height: 41px;
+    display: block;
+    border-color: #f1f1f1;
+    color: #333;
+    font-family: Tahoma,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif!important;
+    font-weight: 400;
+    font-size: 14px;
+}
+/*color: #838383;*/
+

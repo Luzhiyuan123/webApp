@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}TapTap{% endblock  %}</title>
+    {% block head %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/animation.css">
+    <link rel="stylesheet" href="../component/header/header.css">
+    <link rel="stylesheet" href="../component/footer/footer.css">
+    {% endblock  %}
+</head>
+<body>
+    <div class="nav-mask"></div>
+    <div class="nav-slider">
+        <div class="back">
+            <button class="back_1"><i class="back_2 tap-icon"></i></button>
+        </div>
+        <ul class="slider_menu">
+            <li class="slider_list"><a href="#">首页</a></li>
+            <li class="slider_list"><a href="#">排行榜</a></li>
+            <li class="slider_list"><a href="#">安利墙</a></li>
+            <li class="slider_list"><a href="#">发现</a></li>
+            <li class="slider_list"><a href="#">动态</a></li>
+        </ul>
+    </div>
+    <div class="wrap">
+            {% include "../../component/header/header.html" %}
+            {% block content %}{% endblock  %}
+            {% include "../../component/footer/footer.html" %}  
+            {% block scripts %}
+            <script src="../public/js/zepto.js"></script>
+            <script src="../component/header/header.js"></script>
+            {% endblock %} 
+    </div> 
+</body>
+</html>

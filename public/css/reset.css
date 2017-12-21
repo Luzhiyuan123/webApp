@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;    
+}
+button{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    line-height:30px;
+    width: 100%;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearFix:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+input::-moz-placeholder { 
+    　　color:#999;
+};

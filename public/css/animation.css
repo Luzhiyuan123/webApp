@@ -1,0 +1,26 @@
+@keyframes flipLeft{
+    0%{
+        left:-73%;
+        opacity: .5;
+    }
+    100%{
+        left: 0%;
+        opacity:1;
+    }
+}
+@keyframes flipRight{
+    0%{
+        left:0%;
+        opacity: 1;
+    }
+    100%{
+        left: -73%;
+        opacity:.5;
+    }
+}
+.flip-left{
+    animation: flipLeft 1 .2s ease-in-out forwards;
+}
+.flip-right{
+    animation: flipRight 1 .2s ease-in-out forwards;
+}
